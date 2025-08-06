@@ -65,7 +65,7 @@ function Table() {
     }
     // else (!prevPageUrl) 
     //   setNextPageUrl(nextPageUrl)
-    
+
   };
 
   const toggleSortOrder = () => {
@@ -82,9 +82,9 @@ function Table() {
     }
 
     data.sort((a, b) => {
-        if (sortOrder === 'asc') {
+      if (sortOrder === 'asc') {
         return a.name.localeCompare(b.name);
-      } else {  
+      } else {
         return b.name.localeCompare(a.name);
       }
     });
@@ -110,21 +110,21 @@ function Table() {
         {filteredData.length > 0 ? (
           <div className="tableButton">
             <div>
-              
-            
+
+
               <table className="tableApi">
                 <thead>
                   <tr>
                     <th className="th1">POKEMON NAME  <div className="sortWordImg">
-                <div>
-                <button className="sortbtn" onClick={toggleSortOrder}>Sort</button>
-                </div>
-                <div className="sortImg">
-                  <img className="sortImg" src="/Icon/sort.svg" alt="Sort image"   onClick={toggleSortOrder}/>
-                </div>
+                      <div>
+                        <button className="sortbtn" onClick={toggleSortOrder}>Sort</button>
+                      </div>
+                      <div className="sortImg">
+                        <img className="sortImg" src="/Icon/sort.svg" alt="Sort image" onClick={toggleSortOrder} />
+                      </div>
 
-              </div>  
-</th>
+                    </div>
+                    </th>
                     <th className="th2">URL</th>
                   </tr>
                 </thead>
