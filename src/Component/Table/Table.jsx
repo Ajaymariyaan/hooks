@@ -115,7 +115,9 @@ function Table() {
               <table className="tableApi">
                 <thead>
                   <tr>
-                    <th className="th1">POKEMON NAME  <div className="sortWordImg">
+                    <th className="th2">POKEMON
+                    </th>
+                    <th className="th1">URL  <div className="sortWordImg">
                       <div>
                         <button className="sortbtn" onClick={toggleSortOrder}>Sort</button>
                       </div>
@@ -123,9 +125,7 @@ function Table() {
                         <img className="sortImg" src="/Icon/sort.svg" alt="Sort image" onClick={toggleSortOrder} />
                       </div>
 
-                    </div>
-                    </th>
-                    <th className="th2">URL</th>
+                    </div></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -187,6 +187,7 @@ function Table() {
             <p className="paraApi">
               <strong>Types:</strong>{" "}
               {selectedPokemon.types.map((type) => type.type.name).join(", ")}
+              
             </p>
           </div>
         )}
