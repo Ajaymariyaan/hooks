@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo,useRef } from "react";
 import "./Table.css";
 
 function Table() {
@@ -92,6 +92,19 @@ function Table() {
     return data;
   }, [pokemonData, debouncedSearchTerm, sortOrder]);
 
+   const textRef = useRef()
+
+
+
+    useEffect(() => {
+
+        textRef.current.focus()
+
+    },[])
+
+
+
+
   return (
     <div className="container">
       <h2 className="h2D">Pokemon List</h2>
@@ -99,6 +112,7 @@ function Table() {
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
         <input
           type="text"
+           ref={textRef}
           className="SearchBar"
           placeholder="Search Pokemon..."
           value={searchTerm}
@@ -187,7 +201,7 @@ function Table() {
             <p className="paraApi">
               <strong>Types:</strong>{" "}
               {selectedPokemon.types.map((type) => type.type.name).join(", ")}
-              
+
             </p>
           </div>
         )}
