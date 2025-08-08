@@ -1,14 +1,13 @@
-import React from "react";
-import UseState from "../../Component/UseState/UseState";
-// import UseEffect from "../../Component/UseState/UseEffect/UseEffect";
-//  import UseEffectSample from "../../Component/UseState/UseEffect/UseEffect";
-import Counter from "../../Component/UseEffect/UseEffect";
-import UseMemoSample from "../../Component/UseMemo/UseMemo";
-import Parent from "../../Component/ReactMemo/parent";
-import CallBackParent from "../../Component/CallBack/CallBackParent";
-import UseRefSample from "../../Component/UseRef/UseRefSample";
-// import Child from "../../Component/UseContext/UsedUseContext/Child";
-// import UserConext from "../../Component/UseContext/CreateUseContext/UserContext";
+// import React from "react";
+// import UseState from "../../Component/UseState/UseState";
+// import Counter from "../../Component/UseEffect/UseEffect";
+// import UseMemoSample from "../../Component/UseMemo/UseMemo";
+// import Parent from "../../Component/ReactMemo/parent";
+// import CallBackParent from "../../Component/CallBack/CallBackParent";
+// import UseRefSample from "../../Component/UseRef/UseRefSample";
+// import UserContextProvider from "../../Component/UseContext/ProvideUseContext.jsx/ProdiveUseContext";
+// import Counter from "../../Component/UseReducer/UseReducer";
+
 import Table from "../../Component/Table/Table";
 function MainPage(){
 
@@ -41,7 +40,9 @@ function MainPage(){
     </UserConext.Provider> */}
 
 <Table/>    
+{/* <Counter/> */}
 
+{/* <UserContextProvider/> */}
 </div>
 
     </>

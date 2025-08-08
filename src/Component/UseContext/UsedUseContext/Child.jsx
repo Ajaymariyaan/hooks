@@ -1,19 +1,14 @@
+
 import React, { useContext } from "react";
-import UserConext from "../CreateUseContext/UserContext";
+import UserContext from "../CreateUseContext/UserContext"; 
 
-function Child(){
+function Child() {
+    const userName = useContext(UserContext);
 
-    const name=useContext(UserConext)
+    return(
 
-    return(<>
-
-<h1>
-    Hello,{name}
-</h1>
-
+    <p>Hello {userName}</p>
     
-    </>
-
     )
 }
 

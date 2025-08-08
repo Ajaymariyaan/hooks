@@ -41,9 +41,9 @@ function Table() {
     setSearchTerm(e.target.value);
   };
 
-  const handlePokemonClick = async (url) => {
+  const handlePokemonClick = async (name) => {
     try {
-      const response = await fetch(url);
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
       const data = await response.json();
       setSelectedPokemon(data);
     } catch (error) {
@@ -147,13 +147,13 @@ function Table() {
                     <tr key={index}>
                       <td
                         className="tdD"
-                        onClick={() => handlePokemonClick(pokemon.url)}
+                        onClick={() => handlePokemonClick(pokemon.name)}
                       >
                         {pokemon.name}
                       </td>
                       <td
                         className="tdD"
-                        onClick={() => handlePokemonClick(pokemon.url)}
+                        onClick={() => handlePokemonClick(pokemon.name)}
                       >
                         {pokemon.url}
                       </td>
