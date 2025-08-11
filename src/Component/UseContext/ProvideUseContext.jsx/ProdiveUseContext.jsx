@@ -1,15 +1,16 @@
+
 import React from "react";
-import UserConext from "../CreateUseContext/UserContext";
+import UserContext from "./UserContext"; 
 import Child from "../UsedUseContext/Child";
 
-function UserContextProvider(){
+function UserContextProvider() {
+    const name = "Ajai";
 
-const name="Ajai"
-return(
-    <UserConext.Provider value={name}>
-        <Child/>
-    </UserConext.Provider>
-)
-
+    return (
+        <UserContext.Provider value={name}>
+            <Child />
+        </UserContext.Provider>
+    );
 }
+
 export default UserContextProvider;

@@ -7,8 +7,10 @@
 // import UseRefSample from "../../Component/UseRef/UseRefSample";
 // import UserContextProvider from "../../Component/UseContext/ProvideUseContext.jsx/ProdiveUseContext";
 // import Counter from "../../Component/UseReducer/UseReducer";
+// import SampleProvider from "../../Component/UseProvider";
 
 import Table from "../../Component/Table/Table";
+// import SampleTest from "../../Component/UseMemo/UseMemo1";
 function MainPage(){
 
     // const userName="Ajaii"
@@ -40,9 +42,15 @@ function MainPage(){
     </UserConext.Provider> */}
 
 <Table/>    
+ 
+
+ {/* <SampleTest/> */}
 {/* <Counter/> */}
 
 {/* <UserContextProvider/> */}
+{/* <SampleProvider/> */}
+
+
 </div>
 
     </>

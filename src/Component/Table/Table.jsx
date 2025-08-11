@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect, useMemo,useRef } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import "./Table.css";
 
 function Table() {
@@ -64,7 +64,7 @@ function Table() {
       setSelectedPokemon(null);
     }
     // else (!prevPageUrl) 
-    //   setNextPageUrl(nextPageUrl)
+    //   setNextPageUrl(nextPageUrl) 
 
   };
 
@@ -92,15 +92,15 @@ function Table() {
     return data;
   }, [pokemonData, debouncedSearchTerm, sortOrder]);
 
-   const textRef = useRef()
+  const textRef = useRef()
 
 
 
-    useEffect(() => {
+  useEffect(() => {
 
-        textRef.current.focus()
+    textRef.current.focus()
 
-    },[])
+  })
 
 
 
@@ -112,7 +112,7 @@ function Table() {
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
         <input
           type="text"
-           ref={textRef}
+          ref={textRef}
           className="SearchBar"
           placeholder="Search Pokemon..."
           value={searchTerm}
@@ -136,7 +136,7 @@ function Table() {
                         <button className="sortbtn" onClick={toggleSortOrder}>Sort</button>
                       </div>
                       <div className="sortImg">
-                        <img className="sortImg" src="/Icon/sort.svg" alt="Sort image" onClick={toggleSortOrder} />
+                        <img className="sortImg" src="/Icon/sort1.png" alt="Sort image" onClick={toggleSortOrder} />
                       </div>
 
                     </div></th>
